@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android", "web"],
+  "ios": {
+    "modules": ["PokemonModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.pokemon.PokemonModule"]
+  }
+}
