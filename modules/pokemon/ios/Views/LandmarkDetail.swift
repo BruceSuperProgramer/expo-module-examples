@@ -45,6 +45,6 @@ struct LandmarkDetail: View {
 }
 
 
-#Preview {
-    LandmarkDetail(landmark: landmarks[0])
-}
+//#Preview {
+//    LandmarkDetail(landmark: landmarks[0])
+//}

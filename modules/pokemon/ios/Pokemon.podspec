@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
     'SWIFT_COMPILATION_MODE' => 'wholemodule'
   }
   
-  s.source_files = "**/*.{h,m,mm,swift,hpp,cpp,json}"
+  s.source_files = "**/*.{h,m,mm,swift,hpp,cpp}"
   
 end

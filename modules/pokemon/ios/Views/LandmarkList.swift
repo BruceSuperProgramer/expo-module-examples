@@ -1,10 +1,14 @@
 import SwiftUI
+import CoreData
 
 
 struct LandmarkList: View {
+    @EnvironmentObject var viewModel: ViewModel
+    @State private var searchQuery = ""
+
     var body: some View {
-        NavigationSplitView {
-            List(landmarks) { landmark in
+        NavigationView {            
+            List(viewModel.filteredItems) { landmark in
                 NavigationLink {
                     LandmarkDetail(landmark: landmark)
                 } label: {
@@ -12,13 +16,15 @@ struct LandmarkList: View {
                 }
             }
             .navigationTitle("Landmarks")
-        } detail: {
-            Text("Select a Landmark")
+            .searchable(text: $searchQuery)
+            .onChange(of: searchQuery) { newValue in
+                            viewModel.filterItems(with: newValue)
+                        }
         }
     }
 }
 
 
-#Preview {
-    LandmarkList()
-}
+//#Preview {
+//    LandmarkList()
+//}
