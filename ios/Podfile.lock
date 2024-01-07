@@ -1,5 +1,9 @@
 PODS:
   - boost (1.76.0)
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
   - DoubleConversion (1.1.6)
   - EXApplication (5.3.1):
     - ExpoModulesCore
@@ -19,6 +23,9 @@ PODS:
     - React-NativeModulesApple
     - React-RCTAppDelegate
     - ReactCommon/turbomodule/core
+  - ExpoRadialChart (1.0.0):
+    - Charts (~> 4.1.0)
+    - ExpoModulesCore
   - ExpoSettings (1.0.0):
     - ExpoModulesCore
   - ExpoWebView (1.0.0):
@@ -454,6 +461,7 @@ PODS:
     - React-logger (= 0.72.6)
     - React-perflogger (= 0.72.6)
   - SocketRocket (0.6.1)
+  - SwiftAlgorithms (1.0.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -466,6 +474,7 @@ DEPENDENCIES:
   - Expo (from `../node_modules/expo`)
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
+  - ExpoRadialChart (from `../modules/expo-radial-chart/ios`)
   - ExpoSettings (from `../modules/expo-settings/ios`)
   - ExpoWebView (from `../modules/expo-web-view/ios`)
   - EXSplashScreen (from `../node_modules/expo-splash-screen/ios`)
@@ -512,9 +521,11 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Charts
     - fmt
     - libevent
     - SocketRocket
+    - SwiftAlgorithms
 
 EXTERNAL SOURCES:
   boost:
@@ -535,6 +546,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-keep-awake/ios"
   ExpoModulesCore:
     :path: "../node_modules/expo-modules-core"
+  ExpoRadialChart:
+    :path: "../modules/expo-radial-chart/ios"
   ExpoSettings:
     :path: "../modules/expo-settings/ios"
   ExpoWebView:
@@ -621,6 +634,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   EXApplication: 042aa2e3f05258a16962ea1a9914bf288db9c9a1
   EXConstants: ce5bbea779da8031ac818c36bea41b10e14d04e1
@@ -629,6 +643,7 @@ SPEC CHECKSUMS:
   Expo: 61a8e1aa94311557c137c0a4dfd4fe78281cfbb4
   ExpoKeepAwake: be4cbd52d9b177cde0fd66daa1913afa3161fc1d
   ExpoModulesCore: c480fd4e3c7c8e81f0a6ba3a7c56869f25fe016d
+  ExpoRadialChart: 758a3f7a6b98b9181847757f6e2a3ffa2ccd74c6
   ExpoSettings: 390c716fe601290f50d6d850ffa3b5bfd5794f77
   ExpoWebView: 6a62b5066819b14a5388d1eca41e161e13a3b22a
   EXSplashScreen: c0e7f2d4a640f3b875808ed0b88575538daf6d82
@@ -672,6 +687,7 @@ SPEC CHECKSUMS:
   React-utils: fa59c9a3375fb6f4aeb66714fd3f7f76b43a9f16
   ReactCommon: dd03c17275c200496f346af93a7b94c53f3093a4
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
   Yoga: b76f1acfda8212aa16b7e26bcce3983230c82603
 
 PODFILE CHECKSUM: c6e675fcdb2e1926f93068e92dfb1085caa3e2f4

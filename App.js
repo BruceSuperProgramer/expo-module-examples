@@ -1,8 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { useCallback, useState } from "react";
-import { Button, SafeAreaView, StyleSheet } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
 import landmarkData from "./assets/landmarkData";
-import { PokemonModule, PokemonView } from "./modules/pokemon";
+import { ExpoRadialChartView } from "./modules/expo-radial-chart";
+import { PokemonModule } from "./modules/pokemon";
 
 export default function App() {
   const [listData, setListData] = useState(landmarkData);
@@ -15,11 +16,29 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
 
-      <PokemonView
+      {/* <PokemonView
         style={{ flex: 1, backgroundColor: "purple" }}
         listData={listData}
       />
-      <Button onPress={deleteLastItem} title={"Delete"}></Button>
+      <Button onPress={deleteLastItem} title={"Delete"}></Button> */}
+
+      <ExpoRadialChartView
+        style={styles.container}
+        data={[
+          {
+            color: "#ff0000",
+            percentage: 0.5
+          },
+          {
+            color: "#00ff00",
+            percentage: 0.2
+          },
+          {
+            color: "#0000ff",
+            percentage: 0.3
+          }
+        ]}
+      />
     </SafeAreaView>
   );
 }
