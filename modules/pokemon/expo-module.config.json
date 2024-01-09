@@ -4,6 +4,6 @@
     "modules": ["PokemonModule"]
   },
   "android": {
-    "modules": ["expo.modules.pokemon.PokemonModule"]
+    "modules": ["expo.modules.pokemon.modules.PokemonModule"]
   }
 }

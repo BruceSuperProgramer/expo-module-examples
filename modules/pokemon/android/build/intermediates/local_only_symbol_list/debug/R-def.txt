@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+drawable charleyrivers
+drawable chilkoottrail
+drawable chincoteague
+drawable hiddenlake
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable icybay
+drawable lakemcdonald
+drawable rainbowlake
+drawable silversalmoncreek
+drawable stmarylake
+drawable turtlerock
+drawable twinlake
+drawable umbagog
+mipmap ic_launcher
+mipmap ic_launcher_round

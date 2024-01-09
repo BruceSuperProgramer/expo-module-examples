@@ -90,6 +90,15 @@ android {
         versionName "1.0.0"
 
         buildConfigField("boolean", "REACT_NATIVE_UNSTABLE_USE_RUNTIME_SCHEDULER_ALWAYS", (findProperty("reactNative.unstable_useRuntimeSchedulerAlways") ?: true).toString())
+
+        // def localPropertiesFile = rootProject.file('local.properties')
+        // if (localPropertiesFile.exists()) {
+        //     Properties properties = new Properties()
+        //     properties.load(new FileInputStream(localPropertiesFile))
+        //     if (properties.containsKey("GOOGLE_MAPS_API_KEY")) {
+        //         buildConfigField 'String', "GOOGLE_MAPS_API_KEY", properties["GOOGLE_MAPS_API_KEY"]
+        //     }
+        // }
     }
     signingConfigs {
         debug {

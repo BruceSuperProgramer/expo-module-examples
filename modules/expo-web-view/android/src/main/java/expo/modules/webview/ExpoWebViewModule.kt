@@ -2,6 +2,7 @@ package expo.modules.webview
 
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
+import java.net.URL
 
 class ExpoWebViewModule : Module() {
   // Each module class must implement the definition function. The definition consists of components
@@ -38,9 +39,8 @@ class ExpoWebViewModule : Module() {
     // Enables the module to be used as a native view. Definition components that are accepted as part of
     // the view definition: Prop, Events.
     View(ExpoWebView::class) {
-      // Defines a setter for the `name` prop.
-      Prop("name") { view: ExpoWebView, prop: String ->
-        println(prop)
+      Prop("url") { view: ExpoWebView, url: URL? ->
+        view.webView.loadUrl(url.toString())
       }
     }
   }
