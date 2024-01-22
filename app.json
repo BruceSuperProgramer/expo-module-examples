@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "myapp",
     "name": "Test",
     "slug": "Test",
     "version": "1.0.0",
@@ -11,9 +12,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.brucehe.Test"
@@ -26,12 +25,14 @@
       "package": "com.brucehe.Test"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
     "extra": {
       "eas": {
         "projectId": "d240943f-ecdf-406f-88eb-38b82e9f6dc4"
       }
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }

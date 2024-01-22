@@ -1,3 +1,5 @@
+import { ViewStyle } from "react-native";
+
 export type ChangeEventPayload = {
   value: string;
 };
@@ -20,6 +22,6 @@ type Data = Array<{
 }>;
 
 export type PokemonViewProps = {
-  name: string;
   listData: Data;
+  style: ViewStyle;
 };
