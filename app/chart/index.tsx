@@ -1,23 +1,14 @@
 import { StyledComponent } from "nativewind";
-import { View } from "react-native";
+import { useMemo } from "react";
+import { Platform, View } from "react-native";
 import ExpoRadialChartView from "../../modules/expo-radial-chart/src/ExpoRadialChartView";
-
-const DATA = [
-  {
-    color: "#ff0000",
-    percentage: 0.5
-  },
-  {
-    color: "#00ff00",
-    percentage: 0.2
-  },
-  {
-    color: "#0000ff",
-    percentage: 0.3
-  }
-];
+import { ANDROID_DATA, IOS_DATA } from "./constants";
 
 const ChartScreen = () => {
+  const DATA = useMemo(() => {
+    if (Platform.OS == "android") return ANDROID_DATA;
+    return IOS_DATA;
+  }, []);
   return (
     <StyledComponent component={View} className="flex-1">
       <ExpoRadialChartView style={{ flex: 1 }} data={DATA} />

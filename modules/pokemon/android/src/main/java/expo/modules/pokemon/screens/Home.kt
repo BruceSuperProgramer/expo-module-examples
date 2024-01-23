@@ -1,10 +1,8 @@
 package expo.modules.pokemon.screens
 
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import expo.modules.pokemon.components.DrawerList
 import expo.modules.pokemon.context.localLandMarksViewModel

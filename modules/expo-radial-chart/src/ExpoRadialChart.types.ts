@@ -4,12 +4,17 @@ export type ChangeEventPayload = {
   value: string;
 };
 
-type Series = {
+type IOSSeries = {
   color: string;
   percentage: number;
 };
 
+type AndroidSeries = {
+  x: string;
+  y: number;
+};
+
 export type ExpoRadialChartViewProps = {
   style?: ViewStyle;
-  data: Series[];
+  data: IOSSeries[] | AndroidSeries[];
 };

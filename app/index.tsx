@@ -1,5 +1,4 @@
 import { Link } from "expo-router";
-import { withExpoSnack } from "nativewind";
 import { Text, View } from "react-native";
 import Button from "./components/Button";
 
@@ -8,12 +7,12 @@ const Page = () => {
     <View style={{ flex: 1 }}>
       <Link
         href={{
-          pathname: "/home"
+          pathname: "/nativelist"
         }}
         asChild
       >
         <Button btnClassName={"w-80 h-20 self-center my-3"}>
-          <Text>Home</Text>
+          <Text>Native List</Text>
         </Button>
       </Link>
 
@@ -30,16 +29,16 @@ const Page = () => {
 
       <Link
         href={{
-          pathname: "/login"
+          pathname: "/video"
         }}
         asChild
       >
         <Button btnClassName={"w-80 h-20 self-center my-3"}>
-          <Text>Login</Text>
+          <Text>Video</Text>
         </Button>
       </Link>
     </View>
   );
 };
 
-export default withExpoSnack(Page);
+export default Page;
