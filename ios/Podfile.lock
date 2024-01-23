@@ -30,6 +30,8 @@ PODS:
     - ExpoModulesCore
   - ExpoSettings (1.0.0):
     - ExpoModulesCore
+  - ExpoVideo (1.0.0):
+    - ExpoModulesCore
   - ExpoWebView (1.0.0):
     - ExpoModulesCore
   - EXSplashScreen (0.20.5):
@@ -490,6 +492,7 @@ DEPENDENCIES:
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
   - ExpoRadialChart (from `../modules/expo-radial-chart/ios`)
   - ExpoSettings (from `../modules/expo-settings/ios`)
+  - ExpoVideo (from `../modules/expo-video/ios`)
   - ExpoWebView (from `../modules/expo-web-view/ios`)
   - EXSplashScreen (from `../node_modules/expo-splash-screen/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -569,6 +572,8 @@ EXTERNAL SOURCES:
     :path: "../modules/expo-radial-chart/ios"
   ExpoSettings:
     :path: "../modules/expo-settings/ios"
+  ExpoVideo:
+    :path: "../modules/expo-video/ios"
   ExpoWebView:
     :path: "../modules/expo-web-view/ios"
   EXSplashScreen:
@@ -671,6 +676,7 @@ SPEC CHECKSUMS:
   ExpoModulesCore: c480fd4e3c7c8e81f0a6ba3a7c56869f25fe016d
   ExpoRadialChart: 758a3f7a6b98b9181847757f6e2a3ffa2ccd74c6
   ExpoSettings: 390c716fe601290f50d6d850ffa3b5bfd5794f77
+  ExpoVideo: cf4ee06f7b7518f02be4c4b2269daf5d94f229f5
   ExpoWebView: 6a62b5066819b14a5388d1eca41e161e13a3b22a
   EXSplashScreen: c0e7f2d4a640f3b875808ed0b88575538daf6d82
   FBLazyVector: 748c0ef74f2bf4b36cfcccf37916806940a64c32
