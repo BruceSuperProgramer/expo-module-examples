@@ -1,6 +1,6 @@
 {
   "platforms": ["ios", "android", "web"],
-  "apple": {
+  "ios": {
     "modules": ["ExpoVideoModule"]
   },
   "android": {

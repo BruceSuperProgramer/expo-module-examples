@@ -1,7 +1,6 @@
-export type ChangeEventPayload = {
-  value: string;
-};
+import { ViewStyle } from "react-native";
 
 export type ExpoVideoViewProps = {
-  name: string;
+  url: string;
+  style: ViewStyle;
 };
