@@ -2,9 +2,6 @@ package expo.modules.pokemon.screens
 
 import android.content.Context
 import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.livedata.observeAsState
-import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.platform.ComposeView
 import expo.modules.kotlin.AppContext
 import expo.modules.kotlin.views.ExpoView

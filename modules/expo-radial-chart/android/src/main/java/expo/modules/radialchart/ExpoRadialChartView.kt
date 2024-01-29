@@ -3,7 +3,6 @@ package expo.modules.radialchart
 import android.content.Context
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.platform.ComposeView
-import com.jaikeerthick.composable_graphs.composables.line.model.LineData
 import expo.modules.kotlin.AppContext
 import expo.modules.kotlin.views.ExpoView
 import expo.modules.pokemon.context.LocalChartDataViewModel
